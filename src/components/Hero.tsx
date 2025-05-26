@@ -16,7 +16,7 @@ const Hero = () => {
           
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto animate-fade-in" style={{
           animationDelay: '0.2s'
-        }}>Ge  re personas detalhadas e estratégias de vendas personalizadas para seu negócio em minutos</p>
+        }}>Gere personas detalhadas e estratégias de vendas personalizadas para seu negócio em minutos</p>
 
           <div className="flex justify-center mb-12 animate-fade-in" style={{
           animationDelay: '0.4s'
