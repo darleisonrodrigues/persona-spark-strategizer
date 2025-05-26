@@ -1,0 +1,48 @@
+
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
+
+const CTA = () => {
+  return (
+    <section className="py-20 bg-gradient-primary">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <Card className="p-8 md:p-12 bg-white/10 backdrop-blur-sm border-white/20">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            Pronto para conhecer seu cliente ideal?
+          </h2>
+          
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            Junte-se a centenas de empreendedores que já descobriram como vender mais 
+            conhecendo melhor seu público-alvo.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              size="lg" 
+              className="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg"
+              onClick={() => window.location.href = '/generator'}
+            >
+              Gerar Persona Gratuitamente
+            </Button>
+            
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-white text-white hover:bg-white hover:text-purple-600 font-semibold px-8 py-4 text-lg"
+            >
+              Falar com Especialista
+            </Button>
+          </div>
+
+          <div className="mt-8 text-white/80">
+            <p className="text-sm">
+              ✅ Grátis para sempre • ✅ Sem cartão de crédito • ✅ Resultados em minutos
+            </p>
+          </div>
+        </Card>
+      </div>
+    </section>
+  );
+};
+
+export default CTA;
