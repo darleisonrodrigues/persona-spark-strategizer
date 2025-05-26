@@ -1,11 +1,16 @@
+
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  
   const isActive = (path: string) => location.pathname === path;
-  return <nav className="bg-white/95 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
+  
+  return (
+    <nav className="bg-white/95 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
@@ -13,7 +18,7 @@ const Navigation = () => {
               <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">P</span>
               </div>
-              <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">Persona</span>
+              <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">Minha Persona</span>
             </a>
           </div>
 
@@ -63,6 +68,8 @@ const Navigation = () => {
             </div>
           </div>}
       </div>
-    </nav>;
+    </nav>
+  );
 };
+
 export default Navigation;

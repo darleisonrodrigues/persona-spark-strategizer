@@ -1,5 +1,6 @@
 const Footer = () => {
-  return <footer className="bg-gray-900 text-white py-12">
+  return (
+    <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="col-span-2">
@@ -7,7 +8,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">P</span>
               </div>
-              <span className="text-xl font-bold">PersonaAI</span>
+              <span className="text-xl font-bold">Minha Persona</span>
             </div>
             <p className="text-gray-400 mb-4 max-w-md">
               A ferramenta de inteligência artificial que ajuda pequenos empreendedores 
@@ -56,10 +57,12 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © {new Date().getFullYear()} PersonaAI. Todos os direitos reservados.
+            © {new Date().getFullYear()} Minha Persona. Todos os direitos reservados.
           </p>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;

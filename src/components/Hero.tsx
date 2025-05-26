@@ -1,7 +1,10 @@
+
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+
 const Hero = () => {
-  return <section className="relative overflow-hidden bg-gradient-hero py-20 lg:py-32">
+  return (
+    <section className="relative overflow-hidden bg-gradient-hero py-20 lg:py-32">
       <div className="absolute inset-0 bg-black/10"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
@@ -10,17 +13,17 @@ const Hero = () => {
             <span className="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
               Cliente Ideal
             </span>
-            <br />
-            com Inteligência Artificial
           </h1>
           
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto animate-fade-in" style={{
-          animationDelay: '0.2s'
-        }}>Gere personas detalhadas e estratégias de vendas personalizadas para seu negócio em minutos</p>
+            animationDelay: '0.2s'
+          }}>
+            Gere personas detalhadas e estratégias de vendas personalizadas para seu negócio em minutos
+          </p>
 
           <div className="flex justify-center mb-12 animate-fade-in" style={{
-          animationDelay: '0.4s'
-        }}>
+            animationDelay: '0.4s'
+          }}>
             <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg" onClick={() => window.location.href = '/generator'}>
               Gerar Minha Persona Agora
             </Button>
@@ -61,6 +64,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;

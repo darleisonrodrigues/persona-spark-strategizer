@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
@@ -7,6 +6,7 @@ import PersonaCard from '@/components/PersonaCard';
 import StrategiesCard from '@/components/StrategiesCard';
 import { Button } from '@/components/ui/button';
 import { generatePersona } from '@/utils/personaGenerator';
+import { generatePDF } from '@/utils/pdfGenerator';
 
 interface PersonaData {
   name: string;
@@ -64,9 +64,12 @@ const Results = () => {
   }, [location.state]);
 
   const handleDownloadPDF = () => {
-    console.log('Iniciando download do PDF...');
-    // Implementar download PDF aqui
-    alert('Funcionalidade de PDF será implementada em breve!');
+    if (persona && strategies && formData) {
+      console.log('Gerando PDF...');
+      generatePDF(persona, strategies, formData);
+    } else {
+      console.error('Dados não disponíveis para gerar PDF');
+    }
   };
 
   const handleGenerateNew = () => {
