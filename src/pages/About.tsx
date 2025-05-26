@@ -1,18 +1,13 @@
-
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card } from '@/components/ui/card';
-
 const About = () => {
-  return (
-    <div className="min-h-screen bg-gray-50">
+  return <div className="min-h-screen bg-gray-50">
       <Navigation />
       
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Sobre o PersonaAI
-          </h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Sobre o Minha Persona</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Desenvolvido especialmente para ajudar pequenos empreendedores a conhecer melhor seus clientes
           </p>
@@ -31,12 +26,7 @@ const About = () => {
 
           <Card className="p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Como Surgiu</h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              O PersonaAI nasceu da observação de que muitos pequenos empreendedores brasileiros enfrentam 
-              dificuldades para definir claramente quem é seu público-alvo. Sem essa definição, acabam 
-              "atirando para todos os lados" em suas estratégias de marketing, desperdiçando recursos 
-              preciosos.
-            </p>
+            <p className="text-gray-600 leading-relaxed mb-4">O Minha Persona nasceu da observação de que muitos pequenos empreendedores brasileiros enfrentam dificuldades para definir claramente quem é seu público-alvo. Sem essa definição, acabam "atirando para todos os lados" em suas estratégias de marketing, desperdiçando recursos preciosos.</p>
             <p className="text-gray-600 leading-relaxed">
               Combinando nossa experiência em marketing digital com o poder da inteligência artificial, 
               criamos uma solução que transforma dados simples do negócio em insights profundos sobre 
@@ -68,7 +58,7 @@ const About = () => {
           </Card>
 
           <Card className="p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Para Quem é o PersonaAI</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Para Quem é o Minha Persona</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h3 className="font-semibold text-gray-900 mb-3">✅ Ideal para:</h3>
@@ -103,10 +93,7 @@ const About = () => {
               <p className="text-white/90 mb-6">
                 Junte-se a centenas de empreendedores que já transformaram seus negócios
               </p>
-              <button 
-                onClick={() => window.location.href = '/generator'}
-                className="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-              >
+              <button onClick={() => window.location.href = '/generator'} className="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                 Começar Agora
               </button>
             </div>
@@ -115,8 +102,6 @@ const About = () => {
       </div>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default About;
