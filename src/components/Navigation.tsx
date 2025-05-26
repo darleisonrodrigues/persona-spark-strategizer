@@ -1,16 +1,11 @@
-
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-  
   const isActive = (path: string) => location.pathname === path;
-  
-  return (
-    <nav className="bg-white/95 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
+  return <nav className="bg-white/95 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
@@ -30,7 +25,7 @@ const Navigation = () => {
               <a href="/generator" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive('/generator') ? 'text-purple-600 bg-purple-50' : 'text-gray-600 hover:text-purple-600 hover:bg-purple-50'}`}>
                 Gerar Persona
               </a>
-              <a href="/about" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive('/about') ? 'text-purple-600 bg-purple-50' : 'text-gray-600 hover:text-purple-600 hover:bg-purple-50'}`}>Como Funciona</a>
+              <a href="/about" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive('/about') ? 'text-purple-600 bg-purple-50' : 'text-gray-600 hover:text-purple-600 hover:bg-purple-50'}`}>Sobre</a>
             </div>
           </div>
 
@@ -68,8 +63,6 @@ const Navigation = () => {
             </div>
           </div>}
       </div>
-    </nav>
-  );
+    </nav>;
 };
-
 export default Navigation;
