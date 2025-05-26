@@ -12,8 +12,7 @@ const CTA = () => {
           </h2>
           
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Junte-se a centenas de empreendedores que já descobriram como vender mais 
-            conhecendo melhor seu público-alvo.
+            Descubra como vender mais conhecendo melhor seu público-alvo com nossa ferramenta gratuita.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -29,14 +28,15 @@ const CTA = () => {
               size="lg" 
               variant="outline" 
               className="border-white text-white hover:bg-white hover:text-purple-600 font-semibold px-8 py-4 text-lg"
+              onClick={() => window.location.href = '/about'}
             >
-              Falar com Especialista
+              Saiba Mais
             </Button>
           </div>
 
           <div className="mt-8 text-white/80">
             <p className="text-sm">
-              ✅ Grátis para sempre • ✅ Sem cartão de crédito • ✅ Resultados em minutos
+              ✅ Totalmente Gratuito • ✅ Sem Cadastro • ✅ Resultados em Minutos
             </p>
           </div>
         </Card>

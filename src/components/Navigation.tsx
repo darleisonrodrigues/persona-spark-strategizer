@@ -60,8 +60,11 @@ const Navigation = () => {
           </div>
 
           <div className="hidden md:block">
-            <Button className="bg-gradient-primary hover:opacity-90 transition-opacity">
-              Começar Grátis
+            <Button 
+              className="bg-gradient-primary hover:opacity-90 transition-opacity"
+              onClick={() => window.location.href = '/generator'}
+            >
+              Gerar Persona Grátis
             </Button>
           </div>
 
@@ -99,8 +102,11 @@ const Navigation = () => {
                 Sobre
               </a>
               <div className="pt-4">
-                <Button className="w-full bg-gradient-primary hover:opacity-90 transition-opacity">
-                  Começar Grátis
+                <Button 
+                  className="w-full bg-gradient-primary hover:opacity-90 transition-opacity"
+                  onClick={() => window.location.href = '/generator'}
+                >
+                  Gerar Persona Grátis
                 </Button>
               </div>
             </div>
