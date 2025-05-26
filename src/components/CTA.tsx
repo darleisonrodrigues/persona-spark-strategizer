@@ -15,22 +15,13 @@ const CTA = () => {
             Descubra como vender mais conhecendo melhor seu público-alvo com nossa ferramenta gratuita.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Button 
               size="lg" 
               className="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg"
               onClick={() => window.location.href = '/generator'}
             >
               Gerar Persona Gratuitamente
-            </Button>
-            
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-purple-600 font-semibold px-8 py-4 text-lg"
-              onClick={() => window.location.href = '/about'}
-            >
-              Saiba Mais
             </Button>
           </div>
 
