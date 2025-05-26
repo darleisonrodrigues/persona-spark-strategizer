@@ -1,5 +1,5 @@
-
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -23,6 +23,7 @@ const Generator = () => {
     tone: ''
   });
 
+  const navigate = useNavigate();
   const totalSteps = 3;
 
   const handleInputChange = (field: string, value: string) => {
@@ -43,8 +44,15 @@ const Generator = () => {
 
   const handleSubmit = () => {
     console.log('Dados do formulário:', formData);
-    // Aqui será implementada a integração com a IA
-    alert('Em breve: Geração de persona com IA!');
+    
+    // Validação básica
+    if (!formData.businessName || !formData.businessType || !formData.products || !formData.problem || !formData.differentials || !formData.challenges) {
+      alert('Por favor, preencha todos os campos obrigatórios.');
+      return;
+    }
+
+    // Navegar para a página de resultados passando os dados
+    navigate('/results', { state: { formData } });
   };
 
   const renderStep = () => {
