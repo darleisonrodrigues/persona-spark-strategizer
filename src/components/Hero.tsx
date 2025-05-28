@@ -1,16 +1,13 @@
-
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-
 const Hero = () => {
-  return (
-    <section className="relative overflow-hidden bg-gradient-noir py-20 lg:py-32">
+  return <section className="relative overflow-hidden bg-gradient-noir py-20 lg:py-32">
       <div className="absolute inset-0 bg-black/40"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6" data-aos="fade-up">
             Descubra seu{' '}
-            <span className="bg-gradient-to-r from-gray-300 to-gray-100 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-gray-300 to-gray-100 bg-clip-text text-cyan-300">
               Cliente Ideal
             </span>
           </h1>
@@ -58,8 +55,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
