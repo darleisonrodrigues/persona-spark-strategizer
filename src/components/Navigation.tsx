@@ -10,35 +10,39 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="bg-white/95 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-50">
+    <nav className="bg-gradient-glass backdrop-blur-xl border-b border-white/20 sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <a href="/" className="flex items-center space-x-2">
-              <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">Minha Persona</span>
+              <span className="text-2xl font-bold bg-gradient-aurora bg-clip-text text-transparent animate-gradient-shift bg-[length:200%_200%]">
+                Minha Persona
+              </span>
             </a>
           </div>
 
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
-              <a href="/" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive('/') ? 'text-blue-600 bg-blue-50' : 'text-slate-600 hover:text-blue-600 hover:bg-blue-50'}`}>
+            <div className="ml-10 flex items-baseline space-x-6">
+              <a href="/" className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 ${isActive('/') ? 'text-white bg-gradient-primary shadow-lg' : 'text-slate-700 hover:text-white hover:bg-gradient-primary/80 hover:shadow-md'}`}>
                 Início
               </a>
-              <a href="/generator" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive('/generator') ? 'text-blue-600 bg-blue-50' : 'text-slate-600 hover:text-blue-600 hover:bg-blue-50'}`}>
+              <a href="/generator" className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 ${isActive('/generator') ? 'text-white bg-gradient-primary shadow-lg' : 'text-slate-700 hover:text-white hover:bg-gradient-primary/80 hover:shadow-md'}`}>
                 Gerar Persona
               </a>
-              <a href="/about" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive('/about') ? 'text-blue-600 bg-blue-50' : 'text-slate-600 hover:text-blue-600 hover:bg-blue-50'}`}>Sobre</a>
+              <a href="/about" className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 ${isActive('/about') ? 'text-white bg-gradient-primary shadow-lg' : 'text-slate-700 hover:text-white hover:bg-gradient-primary/80 hover:shadow-md'}`}>
+                Sobre
+              </a>
             </div>
           </div>
 
           <div className="hidden md:block">
-            <Button className="bg-gradient-primary hover:opacity-90 transition-opacity" onClick={() => window.location.href = '/generator'}>
+            <Button className="bg-gradient-modern hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-white font-semibold" onClick={() => window.location.href = '/generator'}>
               Gerar Persona Grátis
             </Button>
           </div>
 
           <div className="md:hidden">
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-slate-600 hover:text-blue-600 focus:outline-none">
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-slate-700 hover:text-purple-600 focus:outline-none transition-colors">
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
@@ -47,19 +51,19 @@ const Navigation = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <a href="/" className="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50">
+          <div className="md:hidden bg-white/90 backdrop-blur-sm rounded-lg mt-2 mb-4 shadow-xl">
+            <div className="px-4 pt-4 pb-6 space-y-3">
+              <a href="/" className="block px-4 py-3 rounded-lg text-base font-semibold text-slate-700 hover:text-white hover:bg-gradient-primary transition-all">
                 Início
               </a>
-              <a href="/generator" className="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50">
+              <a href="/generator" className="block px-4 py-3 rounded-lg text-base font-semibold text-slate-700 hover:text-white hover:bg-gradient-primary transition-all">
                 Gerar Persona
               </a>
-              <a href="/about" className="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50">
+              <a href="/about" className="block px-4 py-3 rounded-lg text-base font-semibold text-slate-700 hover:text-white hover:bg-gradient-primary transition-all">
                 Sobre
               </a>
               <div className="pt-4">
-                <Button className="w-full bg-gradient-primary hover:opacity-90 transition-opacity" onClick={() => window.location.href = '/generator'}>
+                <Button className="w-full bg-gradient-modern hover:scale-105 transition-all duration-300 shadow-lg text-white font-semibold" onClick={() => window.location.href = '/generator'}>
                   Gerar Persona Grátis
                 </Button>
               </div>

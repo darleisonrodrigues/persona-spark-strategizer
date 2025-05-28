@@ -60,13 +60,18 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			backgroundImage: {
-				'gradient-primary': 'linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%)',
-				'gradient-secondary': 'linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #c084fc 100%)',
-				'gradient-hero': 'linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #475569 75%, #64748b 100%)',
-				'gradient-card': 'linear-gradient(145deg, rgba(30, 64, 175, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%)',
-				'gradient-elegant': 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%)',
-				'gradient-dark': 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
-				'gradient-light': 'linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%)'
+				'gradient-primary': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+				'gradient-secondary': 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+				'gradient-hero': 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)',
+				'gradient-card': 'linear-gradient(145deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%)',
+				'gradient-elegant': 'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)',
+				'gradient-dark': 'linear-gradient(135deg, #2c3e50 0%, #34495e 100%)',
+				'gradient-light': 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)',
+				'gradient-modern': 'linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%)',
+				'gradient-glass': 'linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.1) 100%)',
+				'gradient-mesh': 'radial-gradient(circle at 20% 80%, #667eea 0%, transparent 50%), radial-gradient(circle at 80% 20%, #764ba2 0%, transparent 50%), radial-gradient(circle at 40% 40%, #f093fb 0%, transparent 50%)',
+				'gradient-aurora': 'linear-gradient(45deg, #667eea, #764ba2, #f093fb, #f5576c, #4facfe)',
+				'gradient-luxury': 'linear-gradient(135deg, #2c3e50 0%, #3498db 25%, #9b59b6 50%, #e74c3c 75%, #f39c12 100%)'
 			},
 			keyframes: {
 				'accordion-down': {
@@ -104,13 +109,22 @@ export default {
 						transform: 'scale(1)',
 						opacity: '1'
 					}
+				},
+				'gradient-shift': {
+					'0%, 100%': {
+						'background-position': '0% 50%'
+					},
+					'50%': {
+						'background-position': '100% 50%'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.3s ease-out',
-				'scale-in': 'scale-in 0.2s ease-out'
+				'scale-in': 'scale-in 0.2s ease-out',
+				'gradient-shift': 'gradient-shift 3s ease infinite'
 			}
 		}
 	},
