@@ -5,33 +5,27 @@ import { Card } from '@/components/ui/card';
 const Hero = () => {
   return (
     <section className="relative overflow-hidden bg-gradient-hero py-20 lg:py-32">
-      <div className="absolute inset-0 bg-black/10"></div>
+      <div className="absolute inset-0 bg-slate-900/20"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6" data-aos="fade-up">
             Descubra seu{' '}
-            <span className="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-300 to-blue-100 bg-clip-text text-transparent">
               Cliente Ideal
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto animate-fade-in" style={{
-            animationDelay: '0.2s'
-          }}>
+          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
             Gere personas detalhadas e estratégias de vendas personalizadas para seu negócio em minutos
           </p>
 
-          <div className="flex justify-center mb-12 animate-fade-in" style={{
-            animationDelay: '0.4s'
-          }}>
-            <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg" onClick={() => window.location.href = '/generator'}>
+          <div className="flex justify-center mb-12" data-aos="fade-up" data-aos-delay="400">
+            <Button size="lg" className="bg-white text-slate-700 hover:bg-slate-50 font-semibold px-8 py-4 text-lg shadow-lg" onClick={() => window.location.href = '/generator'}>
               Gerar Minha Persona Agora
             </Button>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto animate-fade-in" style={{
-          animationDelay: '0.6s'
-        }}>
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="600">
             <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20 text-white">
               <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4 mx-auto">
                 <span className="text-2xl">🎯</span>

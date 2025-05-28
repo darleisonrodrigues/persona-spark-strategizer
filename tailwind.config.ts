@@ -60,10 +60,13 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			backgroundImage: {
-				'gradient-primary': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-				'gradient-secondary': 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-				'gradient-hero': 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)',
-				'gradient-card': 'linear-gradient(145deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%)'
+				'gradient-primary': 'linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%)',
+				'gradient-secondary': 'linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #c084fc 100%)',
+				'gradient-hero': 'linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #475569 75%, #64748b 100%)',
+				'gradient-card': 'linear-gradient(145deg, rgba(30, 64, 175, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%)',
+				'gradient-elegant': 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%)',
+				'gradient-dark': 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
+				'gradient-light': 'linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%)'
 			},
 			keyframes: {
 				'accordion-down': {
