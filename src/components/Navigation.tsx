@@ -10,9 +10,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <a href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">P</span>
-              </div>
+              
               <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">Minha Persona</span>
             </a>
           </div>
