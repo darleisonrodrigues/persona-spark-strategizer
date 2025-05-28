@@ -4,13 +4,13 @@ import { Card } from '@/components/ui/card';
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-hero py-20 lg:py-32">
-      <div className="absolute inset-0 bg-slate-900/20"></div>
+    <section className="relative overflow-hidden bg-gradient-noir py-20 lg:py-32">
+      <div className="absolute inset-0 bg-black/40"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6" data-aos="fade-up">
             Descubra seu{' '}
-            <span className="bg-gradient-to-r from-blue-300 to-blue-100 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-gray-300 to-gray-100 bg-clip-text text-transparent">
               Cliente Ideal
             </span>
           </h1>
@@ -20,7 +20,7 @@ const Hero = () => {
           </p>
 
           <div className="flex justify-center mb-12" data-aos="fade-up" data-aos-delay="400">
-            <Button size="lg" className="bg-white text-slate-700 hover:bg-slate-50 font-semibold px-8 py-4 text-lg shadow-lg" onClick={() => window.location.href = '/generator'}>
+            <Button size="lg" className="bg-white text-black hover:bg-gray-100 font-semibold px-8 py-4 text-lg shadow-lg" onClick={() => window.location.href = '/generator'}>
               Gerar Minha Persona Agora
             </Button>
           </div>
