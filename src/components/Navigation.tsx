@@ -1,16 +1,11 @@
-
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-
   const isActive = (path: string) => location.pathname === path;
-
-  return (
-    <nav className="bg-gradient-glass backdrop-blur-xl border-b border-white/20 sticky top-0 z-50 shadow-xl">
+  return <nav className="bg-gradient-glass backdrop-blur-xl border-b border-white/20 sticky top-0 z-50 shadow-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
@@ -50,8 +45,7 @@ const Navigation = () => {
           </div>
         </div>
 
-        {isMenuOpen && (
-          <div className="md:hidden bg-black/90 backdrop-blur-sm rounded-lg mt-2 mb-4 shadow-xl">
+        {isMenuOpen && <div className="md:hidden bg-black/90 backdrop-blur-sm rounded-lg mt-2 mb-4 shadow-xl">
             <div className="px-4 pt-4 pb-6 space-y-3">
               <a href="/" className="block px-4 py-3 rounded-lg text-base font-semibold text-white bg-gradient-noir hover:bg-gradient-noir/80 transition-all hover:scale-105">
                 Início
@@ -68,11 +62,8 @@ const Navigation = () => {
                 </Button>
               </div>
             </div>
-          </div>
-        )}
+          </div>}
       </div>
-    </nav>
-  );
+    </nav>;
 };
-
 export default Navigation;
