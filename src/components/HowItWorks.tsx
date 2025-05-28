@@ -34,10 +34,10 @@ const HowItWorks = () => {
       <div className="absolute inset-0 bg-gradient-glass"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16" data-aos="fade-up">
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-sophisticated bg-clip-text text-transparent mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Como Funciona
           </h2>
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Um processo simples e rápido para transformar dados em insights valiosos
           </p>
         </div>
@@ -46,11 +46,11 @@ const HowItWorks = () => {
           {steps.map((step, index) => (
             <div key={index} className="text-center relative" data-aos="fade-up" data-aos-delay={index * 100}>
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-16 left-full w-full h-0.5 bg-gradient-sophisticated transform -translate-x-1/2 z-0"></div>
+                <div className="hidden lg:block absolute top-16 left-full w-full h-0.5 bg-gradient-elegant transform -translate-x-1/2 z-0"></div>
               )}
               
-              <Card className="p-8 relative z-10 hover:shadow-2xl transition-all duration-500 bg-gradient-glass backdrop-blur-sm border-white/30 hover:border-white/50 hover:scale-105">
-                <div className="w-20 h-20 bg-gradient-noir rounded-full flex items-center justify-center mb-6 mx-auto shadow-xl hover:shadow-2xl transition-all duration-300">
+              <Card className="p-8 relative z-10 hover:shadow-2xl transition-all duration-500 bg-gradient-glass backdrop-blur-sm border-white/30 hover:border-white/50 hover:scale-105 hover:-translate-y-2">
+                <div className="w-20 h-20 bg-gradient-noir rounded-full flex items-center justify-center mb-6 mx-auto shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110">
                   <span className="text-3xl">{step.icon}</span>
                 </div>
                 
@@ -62,7 +62,7 @@ const HowItWorks = () => {
                   {step.title}
                 </h3>
                 
-                <p className="text-slate-300 leading-relaxed">
+                <p className="text-gray-300 leading-relaxed">
                   {step.description}
                 </p>
               </Card>
