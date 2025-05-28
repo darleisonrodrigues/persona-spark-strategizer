@@ -215,15 +215,15 @@ const Generator = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-glass backdrop-blur-xl">
       <Navigation />
       
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Vamos criar sua persona ideal
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-white">
             Responda algumas perguntas sobre seu negócio e receba uma análise completa
           </p>
         </div>
@@ -231,10 +231,10 @@ const Generator = () => {
         {/* Progress Bar */}
         <div className="mb-8">
           <div className="flex items-center justify-between mb-2">
-            <span className="text-sm font-medium text-gray-600">
+            <span className="text-sm font-medium text-white">
               Etapa {currentStep} de {totalSteps}
             </span>
-            <span className="text-sm font-medium text-gray-600">
+            <span className="text-sm font-medium text-white">
               {Math.round((currentStep / totalSteps) * 100)}% completo
             </span>
           </div>

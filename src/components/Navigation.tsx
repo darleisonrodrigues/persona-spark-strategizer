@@ -31,7 +31,7 @@ const Navigation = () => {
           </div>
 
           <div className="hidden md:block">
-            <Button onClick={() => window.location.href = '/generator'} className="bg-gradient-elegant hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-semibold hover:bg-gradient-noir text-slate-50">
+            <Button onClick={() => window.location.href = '/generator'} className="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg text-white bg-gradient-noir shadow-lg hover:bg-gradient-noir/80">
               Gerar Persona Grátis
             </Button>
           </div>
@@ -56,11 +56,9 @@ const Navigation = () => {
               <a href="/about" className="block px-4 py-3 rounded-lg text-base font-semibold text-white bg-gradient-noir hover:bg-gradient-noir/80 transition-all hover:scale-105">
                 Sobre
               </a>
-              <div className="pt-4">
-                <Button className="w-full bg-gradient-elegant hover:scale-105 transition-all duration-300 shadow-lg text-white font-semibold hover:bg-gradient-noir" onClick={() => window.location.href = '/generator'}>
-                  Gerar Persona Grátis
-                </Button>
-              </div>
+              <a href="/generator" className="block px-4 py-3 rounded-lg text-base font-semibold text-white bg-gradient-noir hover:bg-gradient-noir/80 transition-all hover:scale-105">
+                Gerar Persona Grátis
+              </a>
             </div>
           </div>}
       </div>
