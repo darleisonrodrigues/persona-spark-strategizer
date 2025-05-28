@@ -31,7 +31,7 @@ const Navigation = () => {
           </div>
 
           <div className="hidden md:block">
-            <Button className="bg-gradient-elegant hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-white font-semibold hover:bg-gradient-noir" onClick={() => window.location.href = '/generator'}>
+            <Button onClick={() => window.location.href = '/generator'} className="bg-gradient-elegant hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-semibold hover:bg-gradient-noir text-slate-50">
               Gerar Persona Grátis
             </Button>
           </div>
