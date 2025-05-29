@@ -102,7 +102,7 @@ const generateIncome = (businessType: string): string => {
     ecommerce: 'R$ 3.000 - R$ 8.000',
     servicos: 'R$ 2.500 - R$ 6.000',
     consultoria: 'R$ 5.000 - R$ 15.000',
-    restaurante: 'R$ 4.000 - R$ 10.000',
+    restaurante: 'R$ 2.000 - R$ 5.000',
     infoprodutos: 'R$ 3.000 - R$ 12.000',
     saude: 'R$ 4.000 - R$ 12.000',
     educacao: 'R$ 3.000 - R$ 8.000',
